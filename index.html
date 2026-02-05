@@ -20,3 +20,231 @@
     <p>Bienvenue à Atelier Llama 🦙</p>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atelier Llama</title>
+
+  <!-- Fuentes modernas -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    /* Header y navegación */
+    header {
+      background-color: #ff7043;
+      color: #fff;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 1.8rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Secciones */
+    section {
+      padding: 5rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    section:nth-child(even) {
+      background-color: #fff;
+    }
+
+    h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      color: #ff7043;
+    }
+
+    p {
+      max-width: 800px;
+      margin: 0 auto 2rem auto;
+      text-align: center;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      margin: 2rem auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    img:hover {
+      transform: scale(1.03);
+    }
+
+    /* Botones */
+    .btn {
+      display: inline-block;
+      padding: 0.8rem 1.8rem;
+      background-color: #ff7043;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #ff5722;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    /* Animaciones suaves con scroll */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 1s ease-out, transform 1s ease-out;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header / Navegación -->
+  <header>
+    <h1>Atelier Llama</h1>
+    <nav>
+      <a href="#accueil">Accueil</a>
+      <a href="#apropos">À propos</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Sección Accueil -->
+  <section id="accueil" class="fade-in">
+    <h2>Bienvenue à l'Atelier Llama</h2>
+    <p>
+      Découvrez notre univers artistique où chaque création raconte une histoire unique. 
+      Parcourez nos œuvres et laissez-vous inspirer.
+    </p>
+    <img src="https://via.placeholder.com/900x400" alt="Accueil Image">
+    <div style="text-align:center;">
+      <a class="btn" href="#galerie">Voir la Galerie</a>
+    </div>
+  </section>
+
+  <!-- Sección À propos -->
+  <section id="apropos" class="fade-in">
+    <h2>À propos de nous</h2>
+    <p>
+      L'Atelier Llama est un espace créatif où nous fusionnons techniques traditionnelles et innovation moderne. 
+      Notre équipe est passionnée par l'art et la création, et chaque projet est une aventure unique.
+    </p>
+    <img src="https://via.placeholder.com/800x400" alt="À propos">
+  </section>
+
+  <!-- Sección Galerie -->
+  <section id="galerie" class="fade-in">
+    <h2>Galerie</h2>
+    <p>
+      Voici une sélection de nos dernières œuvres. Cliquez pour admirer chaque création.
+    </p>
+    <img src="https://via.placeholder.com/600x400" alt="Galerie 1">
+    <img src="https://via.placeholder.com/600x400" alt="Galerie 2">
+    <img src="https://via.placeholder.com/600x400" alt="Galerie 3">
+  </section>
+
+  <!-- Sección Contact -->
+  <section id="contact" class="fade-in">
+    <h2>Contact</h2>
+    <p>
+      Pour toute demande ou collaboration, écrivez-nous à : 
+      <a href="mailto:info@atelierllama.com">info@atelierllama.com</a>
+    </p>
+    <div style="text-align:center;">
+      <a class="btn" href="mailto:info@atelierllama.com">Envoyer un e-mail</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2026 Atelier Llama. Tous droits réservés.
+  </footer>
+
+  <!-- JavaScript: animación al hacer scroll -->
+  <script>
+    const elements = document.querySelectorAll('.fade-in');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    elements.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
