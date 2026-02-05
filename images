@@ -1,0 +1,6 @@
+/mi-repo
+  ├─ index.html       ← tu archivo principal
+  └─ images/          ← aquí van todas tus imágenes
+        ├─ foto1.jpg
+        ├─ foto2.jpg
+        └─ foto3.png
